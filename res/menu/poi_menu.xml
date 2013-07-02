@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/importMenuItem" 
+			android:title="@string/import_all"
+			android:icon="@android:drawable/ic_menu_add" />
+	
+	<item android:id="@+id/deleteMenuItem" 
+			android:title="@string/delete_all"
+			android:icon="@android:drawable/ic_menu_delete" />
+	
+</menu>

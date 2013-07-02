@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/app_settings_title" >
+
+    <PreferenceScreen
+        android:summary="@string/units_summary"
+        android:title="@string/units" >
+        <ListPreference
+            android:defaultValue="km/h"
+            android:dialogTitle="@string/speed"
+            android:entries="@array/speed_units_labels"
+            android:entryValues="@array/speed_units_values"
+            android:key="speed_units"
+            android:title="@string/speed" >
+        </ListPreference>
+        <ListPreference
+            android:defaultValue="km"
+            android:dialogTitle="@string/distance"
+            android:entries="@array/distance_units_labels"
+            android:entryValues="@array/distance_units_values"
+            android:key="distance_units"
+            android:title="@string/distance" >
+        </ListPreference>
+        <ListPreference
+            android:defaultValue="m"
+            android:dialogTitle="@string/elevation"
+            android:entries="@array/elevation_units_labels"
+            android:entryValues="@array/elevation_units_values"
+            android:key="elevation_units"
+            android:title="@string/elevation" >
+        </ListPreference>
+    </PreferenceScreen>
+    
+    <PreferenceScreen android:title="@string/compass" android:summary="@string/compass_summary" android:defaultValue="true">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="true_north"
+            android:summary="@string/true_north_summary"
+            android:title="@string/true_north" >
+        </CheckBoxPreference>
+    </PreferenceScreen>
+    <ListPreference 
+        	android:defaultValue="true"
+         	android:summary="@string/signal_method_summary"
+        	android:title="@string/signal_method" 
+            android:entries="@array/search_signal_labels"
+            android:entryValues="@array/search_signal_values"
+            android:key="signal_method_units" >
+    </ListPreference>
+    <PreferenceScreen android:title="Development" >
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/logging_level_labels"
+            android:entryValues="@array/logging_level_values"
+            android:key="logging_level"
+            android:summary="@string/logging_level_summary"
+            android:title="@string/logging_level" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

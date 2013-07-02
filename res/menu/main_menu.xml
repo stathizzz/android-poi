@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/firstMenuItem"
+        android:icon="@drawable/ic_menu_one"
+        android:title="@string/barcode_scan"/>
+
+    <item
+        android:id="@+id/secondMenuItem"
+        android:icon="@drawable/ic_menu_two"
+        android:title="@string/poi_list"/>
+
+    <item
+        android:id="@+id/thirdMenuItem"
+        android:icon="@drawable/find"
+        android:title="@string/find_nearest"/>
+    
+    
+    <item
+        android:id="@+id/fourthMenuItem"
+        android:icon="@drawable/binoculars"
+        android:title="@string/find_next_nearest"/>
+    
+     <item
+        android:id="@+id/fifthMenuItem"
+        android:icon="@drawable/article"
+        android:title="@string/find_articles"/>
+
+    <item
+        android:id="@+id/settingsMenuItem"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/settings"/>
+
+</menu>

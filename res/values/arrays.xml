@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="speed_units_labels">
+        <item>km/h</item>
+        <item>mi/h</item>
+        <item>κόμβοι</item>
+    </string-array>
+    <string-array name="distance_units_labels">
+        <item>χιλιόμετρα</item>
+        <item>μίλια</item>
+    </string-array>
+    <string-array name="elevation_units_labels">
+        <item>μέτρα</item>
+        <item>πόδια</item>
+    </string-array>
+    <string-array name="logging_level_labels">
+        <item>Χωρίς καταγραφή</item>
+        <item>Μόνο λάθη</item>
+        <item>Λάθη, προειδοποιήσεις</item>
+        <item>Λάθη, προειδοποιήσεις, πληροφορίες</item>
+        <item>Debugging (καταγραφή όλων)</item>
+    </string-array>
+      <string-array name="search_signal_labels">
+        <item>Με δόνηση</item>
+        <item>Με ήχο (beep)</item>
+    </string-array>
+    
+    
+</resources>

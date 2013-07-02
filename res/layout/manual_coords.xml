@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manual_coords_layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="13dp"
+            android:text="@string/user_info" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lat" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/LatFrom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lat"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789.,"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:text="@string/default_lat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lng" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/LngFrom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lng"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789.,"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:text="@string/default_lng" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="13dp"
+            android:text="@string/desired_place_info" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lat" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/LatTo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lat"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789.,"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:text="@string/default_destination_lat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lng" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/LngTo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lng"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789.,"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:text="@string/default_destination_lng" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <Button
+                android:id="@+id/applyBtn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_distance" />
+
+            <LinearLayout style="@style/FillWidth.Hor" >
+
+                <TextView
+                    style="@style/Cell.Label"
+                    android:text="@string/distance" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout style="@style/FillWidth.Hor" >
+                    <TextView
+                        android:id="@+id/distanceTxt"
+                        style="@style/WrapContent.Value.Small"
+                        android:text="@string/default_text" >
+                    </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

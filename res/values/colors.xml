@@ -1,0 +1,15 @@
+<resources>
+    <color name="black">#FF000000</color>
+	<color name="blue">#FF0000FF</color>
+	<color name="darkgray">#FF444444</color>
+	<color name="gold">#FFFFd700</color>
+	<color name="gray">#FFAAAAAA</color>
+	<color name="lightblue">#FF00FFFF</color>
+	<color name="opaque_shadow">#70000000</color>
+	<color name="red">#FFFF0000</color>
+	<color name="transparent">#80000000</color>
+	<color name="stat_label_background">#FF30F0F0</color>
+	<color name="stat_label_text">#FF030F0F</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="label">#FFECBABA</color>
+</resources>

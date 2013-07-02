@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map.PoiMapActivity" >
+
+    <fragment
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />
+
+</RelativeLayout>
+
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
+<!-- <fragment xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--   android:id="@+id/mapview" -->
+<!--    android:name="com.google.android.gms.maps.SupportMapFragment" -->
+<!--    android:layout_width="wrap_content" -->
+<!--    android:layout_height="match_parent" /> -->
+
+
+<!-- <merge xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     xmlns:tools="http://schemas.android.com/tools" -->
+<!--     tools:context=".map.PoiMapActivity" > -->
+    
+  
+
+<!--       <com.google.android.maps.MapView -->
+<!--         android:id="@+id/mapview" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:apiKey="AIzaSyA0rrhVGPv7mB60IOhGYbhqh8A5AtDySMs" -->
+<!--         android:clickable="true" /> -->
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/infoPanel" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:background="#33000000" -->
+<!--         android:orientation="vertical" -->
+<!--         android:padding="2dp" > -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/distance" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:textColor="#FF000000" > -->
+<!--         </TextView> -->
+<!--     </LinearLayout> -->
+
+
+<!--     <LinearLayout -->
+<!--         style="@style/FillParent" -->
+<!--         android:baselineAligned="false" -->
+<!--         android:gravity="bottom" -->
+<!--         android:orientation="horizontal" > -->
+
+<!--          <SeekBar -->
+<!--             android:id="@+id/seekBar1" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" />  -->
+<!--     </LinearLayout> -->
+<!--  	--> 
+ 
+<!-- </merge> -->
