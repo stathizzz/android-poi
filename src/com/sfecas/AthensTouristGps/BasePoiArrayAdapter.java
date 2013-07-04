@@ -33,9 +33,6 @@ import android.widget.ArrayAdapter;
 import com.sfecas.AthensTouristGps.helper.POI;
 import com.sfecas.AthensTouristGps.helper.Utils;
 
-/**
- * @author Sfecas Efstathios
- */
 public class BasePoiArrayAdapter extends ArrayAdapter<POI> {
 
 	private final Comparator<POI> distanceComparator = new Comparator<POI>() {

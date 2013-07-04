@@ -9,6 +9,6 @@ package com.sfecas.AthensTouristGps;
 
 public final class Manifest {
     public static final class permission {
-        public static final String MAPS_RECEIVE="com.sfecas.oss1.permission.MAPS_RECEIVE";
+        public static final String MAPS_RECEIVE="com.sfecas.AthensTouristGps.permission.MAPS_RECEIVE";
     }
 }

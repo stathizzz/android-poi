@@ -40,7 +40,6 @@ import com.sfecas.AthensTouristGps.service.AppServiceConnection;
 import com.sfecas.AthensTouristGps.R;
 
 /**
- * @author Sfecas Efstathios
  * Manages beeps and vibrations for {@link CaptureActivity}.
  */
 public final class BeepManager
@@ -76,8 +75,7 @@ public final class BeepManager
 		if (playBeep && mediaPlayer == null)
 		{
 			// The volume on STREAM_SYSTEM is not adjustable, and users found it
-			// too loud,
-			// so we now play on the music stream.
+			// too loud, so we now play on the music stream.
 			// activity.setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
 			mediaPlayer = buildMediaPlayer(app);

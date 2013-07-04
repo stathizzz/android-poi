@@ -7,7 +7,7 @@
 	<classpathentry exported="true" kind="lib" path="libs/zxing.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry kind="lib" path="C:/Users/vaderas/workspace/android/AthensTouristGps/google-play-services_lib-master/libs/google-play-services.jar"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="C:/android/sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

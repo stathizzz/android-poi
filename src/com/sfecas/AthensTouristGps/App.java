@@ -55,9 +55,6 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.graphics.drawable.BitmapDrawable;
 
-/**
- * @author Sfecas Efstathios
- */
 public class App extends Application
 {
 

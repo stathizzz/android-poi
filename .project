@@ -3,7 +3,6 @@
 	<name>AthensTouristGps</name>
 	<comment></comment>
 	<projects>
-		<project>google-play-services_lib</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

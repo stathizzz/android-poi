@@ -111,7 +111,6 @@ import android.widget.Toast;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 
 /**
- * @author Sfecas Efstathios
  * third activity
  */
 public class ThirdMainActivity extends Activity

@@ -26,9 +26,6 @@ import android.content.res.Configuration;
 
 import com.sfecas.AthensTouristGps.Constants;
 
-/**
- * @author Sfecas Efstathios
- */
 public class OrientationHelper {
 
 	public float azimuth;

@@ -125,7 +125,7 @@ public class MapActivityV1 extends MapActivity
 
 		app = ((App) getApplicationContext());
 
-		setContentView(R.layout.map_view);
+		setContentView(R.layout.mapview);
 
 		mapView = (MapView) findViewById(R.id.mapview);
 

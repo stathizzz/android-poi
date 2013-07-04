@@ -35,9 +35,6 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.text.format.DateFormat;
 
-/**
- * @author Sfecas Efstathios
- */
 public class AppLog {
 
 	private Context context;

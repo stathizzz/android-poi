@@ -113,8 +113,7 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
 						}
 
 					} catch (NumberFormatException e) {
-						//TODO: show error message to user with explanation
-						// setting default values
+					
 						textPref.setText("5,10,15,20");
 						return;
 					}

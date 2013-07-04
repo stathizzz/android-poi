@@ -49,9 +49,6 @@ import com.google.android.*;
 import com.google.zxing.client.android.*;
 import com.google.zxing.*;
 
-/**
- * @author Sfecas Efstathios
- */
 public class MyCaptureActivity extends Activity
 {
 	App app;

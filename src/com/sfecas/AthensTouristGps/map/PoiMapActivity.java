@@ -26,16 +26,21 @@ import java.util.List;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.sfecas.AthensTouristGps.App;
 import com.sfecas.AthensTouristGps.Constants;
+import com.sfecas.AthensTouristGps.PoiListActivity;
+import com.sfecas.AthensTouristGps.ThirdMainActivity;
 import com.sfecas.AthensTouristGps.helper.Utils;
 import com.sfecas.AthensTouristGps.R;
 
@@ -51,8 +56,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import android.support.v4.app.*;
-
-public class PoiMapActivity extends Activity
+public class PoiMapActivity extends FragmentActivity
 {
 
 	public class MapItem
@@ -72,7 +76,7 @@ public class PoiMapActivity extends Activity
 
 	private App app;
 
-	// private MapFragment mapView;
+	// private Fragment mapView;
 	private GoogleMap mapView;
 
 	private Marker currentmark;
@@ -88,7 +92,7 @@ public class PoiMapActivity extends Activity
 	/**
 	 * Called when the activity is first created
 	 */
-	@SuppressLint({ "NewApi", "NewApi" })
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
@@ -97,12 +101,23 @@ public class PoiMapActivity extends Activity
 
 		app = ((App) getApplicationContext());
 
-		setContentView(R.layout.map_view);
-
-		mapView = ((MapFragment) getFragmentManager().findFragmentById(R.id.mapview)).getMap();
-
-		mapView.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-
+		try
+		{		    
+			setContentView(R.layout.mapview);
+				
+			android.app.Fragment temp = (android.app.Fragment) getFragmentManager().findFragmentById(R.id.mapview);
+			
+			mapView = ((MapFragment) getFragmentManager().findFragmentById(R.id.mapview)).getMap();
+	
+			mapView.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+		}
+		catch (Exception ex)
+		{
+			//eat it
+			startActivity(new Intent(this, ThirdMainActivity.class));
+			return;
+		}
+		
 		// getting extra data passed to the activity
 		Bundle b = getIntent().getExtras();
 
