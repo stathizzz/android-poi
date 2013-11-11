@@ -25,12 +25,6 @@ import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
-//import com.aripuca.tracker.NotificationActivity;
-//import com.sfecas.oss1.R;
-
-//import com.aripuca.tracker.track.ScheduledTrackRecorder;
-//import com.aripuca.tracker.track.TrackRecorder;
-
 import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
